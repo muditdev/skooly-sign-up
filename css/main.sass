@@ -1,0 +1,80 @@
+@import "_include/grid"
+@import "_include/global"
+
+
+input:focus
+  outline: none
+
+
+.screen-name
+  .left-half
+    background: url(../img/Icons.jpg)
+    height: 100vh
+    overflow: auto
+    text-align: center
+    position: relative
+    .graphic
+      margin-top: 200px
+      background: #fff
+      display: inline-block
+      padding: 40px
+      border-radius: 50%
+      img
+        vertical-align: middle
+    p.policy
+      width: 100%
+      position: absolute
+      bottom: 40px
+      text-align: center
+
+  section.right-half
+    height: 96vh
+    position: relative
+    padding-left: 70px
+    .branding
+      margin-top: 30px
+    .main-contant
+      margin-top: 150px
+      h1
+        color: #393939
+        font-size: 35px
+        line-height: 40px
+      h2
+        margin-top: 20px
+        font-size: 25px
+        color: #777777
+        line-height: 30px
+      form#name
+        margin-top: 50px
+        input[type="text"]
+          font-size: 30px
+          font-weight: 100
+          font-family: $open
+          line-height: 60px
+          border: none
+          border-bottom: 2px solid #b8b8b8
+          width: 60%
+          &::placeholder
+            color: #b8b8b8
+        input[type="button"]
+          margin-top: 70px
+          background: #fe2167
+          border: none
+          font-family: open sans
+          text-transform: capitalize
+          color: #fff
+          padding: 20px 140px
+          font-size: 30px
+          border-radius: 7px
+          cursor: pointer
+          &:hover
+            background: #FF145E
+.bullets
+  margin-top: 25vh
+.bul
+    background: red
+    width: 13px
+    height: 13px
+    border-radius: 50%
+    float: left
+    margin: 3px
