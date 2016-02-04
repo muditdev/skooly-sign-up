@@ -3,9 +3,13 @@ html(lang="en")
   head
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Skooly Sign up
+    title school | Skooly Sign up
     link(rel="shortcut icon" href="img/logo.png")
     link(rel="stylesheet" href="css/main.css")
+    script(type="text/javascript" src ="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js")
+    script(type="text/javascript" src ="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js")
+    script(type="text/javascript" src ="js/main.js")
+      
   
   body
     section.screen-name-wrap
@@ -13,25 +17,29 @@ html(lang="en")
         .col.col--1-of-2.col--m-12-of-12
           section.left-half 
             .graphic            
-              img(src="img/name.png", alt="")
+              img(src="img/school.png", alt="")
             p.policy By signing up, I agree to Skooly’s <a href="#">Terms of service</a> and <a href="#">Privacy policies</a>
         
         .col.col--1-of-2.col--m-12-of-12
-          section.right-half
+          section.right-half.animated.slideInRight
             .branding
-              img.logo(src="img/logo.png", alt="")
+              a(href="index.html") 
+                img.logo(src="img/logo.png", alt="")
             .main-contant
-              h1 How do we address you
-              h2 This will appear as your signature on your messages
-              form(id="name" action="school.html", method="post")
-                input(type="text" name="name" value="" placeholder="Enter your Name" required)
+              h1 What is your school name
+              h2 Please enter registered name of your School
+              form(id="name" action=""  method="post")
+                input(type="text" name="school" value="" placeholder="Enter school Name")
                 br
                 input(type="submit" name="next" value="next")
+              .add-link
+                a(href="#") Already registered? Login 
+              
                 
               footer
                 .bullets.clearfix
-                  a.bul.active(href="#")
                   a.bul(href="#")
+                  a.bul.active(href="#")
                   a.bul(href="#")
                   a.bul(href="#")
             
